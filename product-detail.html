@@ -1,0 +1,679 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <style>
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+  h1, h2, h3, h4, .font-headline {
+    font-family: 'Manrope', sans-serif;
+  }
+</style>
+    <title>Studio Pro X1 | TechStore</title>
+  </head>
+  <body class="bg-[#faf8ff] text-gray-900">
+   <nav
+      class="fixed top-0 left-0 right-0 z-50 rounded-full mt-4 mx-auto w-[95%] max-w-7xl px-6 py-3 bg-white/80 backdrop-blur-xl shadow flex justify-between items-center"
+    >
+      <a href="home.html" class="text-[24px] font-bold text-[#4F46E5]">
+        TechStore
+      </a>
+
+      <nav
+        class="hidden md:flex gap-8 text-gray-600 font-medium text-[14px] font-manrope"
+      >
+        <a href="home.html" class="hover:text-[#4F46E5] transition">Home</a>
+        <a
+          href="product.html"
+          class="text-[#4F46E5] border-b-2 border-[#4F46E5] pb-1 transition"
+          >Product</a
+        >
+
+        <a href="contact.html" class="hover:text-[#4F46E5] transition">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-4">
+        <button
+          class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-50 transition-transform scale-95 active:scale-90"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-5 h-5 text-gray-700"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+            />
+          </svg>
+        </button>
+        <a
+          href="cart.html"
+          class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-50 transition-transform scale-95 active:scale-90 relative"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-5 h-5 text-gray-700"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+            />
+          </svg>
+          <span
+            class="absolute top-1 right-1 bg-[#4F46E5] text-white text-[9px] w-4 h-4 flex items-center justify-center rounded-full font-bold"
+            >2</span
+          >
+        </a>
+      </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-6 py-12 pt-28">
+      <!-- Breadcrumb -->
+      <nav
+        class="flex items-center gap-1.5 text-[12px] text-[#464554] font-bold uppercase text-gray-400 mb-8"
+      >
+        <a href="product.html" class="hover:text-gray-600">Products</a>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+          class="size-3"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z"
+            clip-rule="evenodd"
+          />
+        </svg>
+        <a href="product.html" class="hover:text-gray-600">Audio</a>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+          class="size-3"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z"
+            clip-rule="evenodd"
+          />
+        </svg>
+        <a href="#" class="hover:text-gray-600 text-[#131B2E]">Studio Pro X1</a>
+      </nav>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        <!-- Left: Image Gallery -->
+        <div class="lg:col-span-7 space-y-6">
+          <div
+            class="aspect-[7/8] bg-[#0F1115] rounded-[48px] overflow-hidden relative shadow-2xl shadow-gray-300"
+          >
+            <img
+              src="https://i5.walmartimages.com/seo/Clearance-Czzoypi-Ear-Buds-Black-Bluetooth-Earbuds-Headphones-Wireless-Bluetooth-Headset-Subwoofer-Bluetooth-5-3-Mobile-Computer-Game-Music-Sports-Ga_de3a3421-ffd3-4171-8f8c-5a6473c2782f.d75ec070220b242e5bc22e057e0ee403.jpeg"
+              class="w-full h-full object-cover"
+              alt="Main product"
+            />
+            <span
+              class="absolute top-5.5 left-5.5 bg-[#825100] text-[#FFFBFF] text-[10px] font-bold px-4 py-2 rounded-full uppercase tracking-widest border border-white/10 backdrop-blur-md"
+              >Limited Edition</span
+            >
+          </div>
+          <div class="grid grid-cols-3 gap-6">
+            <div
+              class="aspect-square bg-white rounded-[32px] overflow-hidden cursor-pointer"
+            >
+              <img
+                src="https://http2.mlstatic.com/D_NQ_NP_728202-MLM76867623274_062024-O-audifonos-beats-studio-pro-color-azul-marino-usado.webp"
+                class="w-full h-full object-cover rounded-[24px]"
+              />
+            </div>
+            <div
+              class="aspect-square bg-[#1A1F2C] rounded-[32px] overflow-hidden hover:opacity-90 transition cursor-pointer"
+            >
+              <img
+                src="https://img.myipadbox.com/upload/store/detail_l/EDA005657101_B3.jpg"
+                class="w-full h-full object-cover opacity-80"
+              />
+            </div>
+            <div
+              class="aspect-square bg-[#2D3139] rounded-[32px] overflow-hidden relative cursor-pointer group"
+            >
+              <img
+                src="https://m.media-amazon.com/images/I/41CreHxK79L._AC_.jpg"
+                class="w-full h-full object-cover opacity-40 group-hover:scale-110 transition duration-500"
+              />
+              <span
+                class="absolute inset-0 flex items-center justify-center text-white font-bold text-[14px]"
+                >+2</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Product Info -->
+        <div class="lg:col-span-5 flex flex-col lg:sticky lg:top-10">
+          <div class="mb-4">
+            <h1 class="text-[48px] text-[#131B2E] font-extrabold">
+              Studio Pro X1
+            </h1>
+            <h2 class="text-[48px] text-[#4648D4] font-extrabold mb-4">
+              Acoustic Master
+            </h2>
+            <div class="flex items-center gap-6">
+              <span
+                class="text-[30px] font-extrabold text-[#131B2E] tracking-tight"
+                >$499.00</span
+              >
+              <div class="flex items-center gap-[4px]">
+                <div class="flex text-black-400 fill-yellow-400 text-xs">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-[11px] h-[11px]"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-[11px] h-[11px]"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-[11px] h-[11px]"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-[11px] h-[11px]"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-[11px] h-[11px]"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"
+                    />
+                  </svg>
+                </div>
+                <span
+                  class="text-[12px] font-bold text-gray-400 text-[#464554] uppercase tracking-wider"
+                  >128 Reviews</span
+                >
+              </div>
+            </div>
+          </div>
+          <p
+            class="text-[#464554] leading-relaxed mb-10 text-[18px] font-normal"
+          >
+            Engineered for clarity, designed for comfort. The Studio Pro X1
+            features custom-tuned 40mm drivers and active noise cancellation
+            that curates your listening environment into a private gallery of
+            sound.
+          </p>
+
+          <!-- Color Finish -->
+          <div class="mb-8">
+            <h3
+              class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#464554] mb-3"
+            >
+              Color Finish
+            </h3>
+            <div class="flex gap-4">
+              <button
+                class="w-10 h-10 rounded-full bg-[#1A1F2C] border-2 border-[#4F46E5] ring-4 ring-[#4F46E5]/10 cursor-pointer"
+              ></button>
+              <button
+                class="w-10 h-10 rounded-full bg-[#E2E7FF] hover:scale-110 transition cursor-pointer"
+              ></button>
+              <button
+                class="w-10 h-10 rounded-full bg-[#767586] hover:scale-110 transition cursor-pointer"
+              ></button>
+            </div>
+          </div>
+
+          <!-- Quantity & Add to Cart -->
+          <div class="mb-8">
+            <h3
+              class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#464554] mb-3"
+            >
+              Quantity
+            </h3>
+            <div class="flex items-center gap-4">
+              <div
+                class="flex items-center gap-8 bg-white rounded-2xl p-1 shadow-sm border border-gray-100"
+              >
+                <button class="hover:text-[#4F46E5] transition-colors cursor-pointer">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-4"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M5 12h14"
+                    />
+                  </svg>
+                </button>
+                <span class="w-10 text-center font-bold text-[#131B2E]">1</span>
+                <button class="hover:text-[#4F46E5] transition-colors cursor-pointer">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-4"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 4.5v15m7.5-7.5h-15"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="w-[308px] h-[56px]">
+                <button
+                  class="flex-1 bg-[#4F46E5] text-white rounded-2xl font-bold flex items-center justify-center gap-3 hover:bg-[#3F37C9] transition shadow-2xl shadow-indigo-200 uppercase text-sm w-full h-full text-[16px] cursor-pointer"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="2.5"
+                    stroke="currentColor"
+                    class="w-5 h-5"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                    />
+                  </svg>
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Features -->
+          <div class="grid grid-cols-2 gap-4">
+            <div
+              class="bg-[#FFFBFF] p-4 rounded-[16-px] border border-gray-100 shadow-sm"
+            >
+              <span class="text-blue-400 text-2xl mb-2 block">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-4 h-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z"
+                  />
+                </svg>
+              </span>
+              <h4 class="font-bold text-[12px] text-[#131B2E] mb-1">
+                Fast Charging
+              </h4>
+              <p
+                class="text-[10px] text-[#464554] font-normal leading-tight tracking-tighter"
+              >
+                5 hours play on 10 min charge
+              </p>
+            </div>
+            <div
+              class="bg-[#FFFBFF] p-4 rounded-[16-px] border border-gray-100 shadow-sm"
+            >
+              <span class="text-blue-400 text-2xl mb-2 block">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-4 h-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12.75 3.03v.568c0 .334.148.65.405.864l1.068.89c.442.369.535 1.01.216 1.49l-.51.766a2.25 2.25 0 0 1-1.161.886l-.143.048a1.107 1.107 0 0 0-.57 1.664c.369.555.169 1.307-.427 1.605L9 13.125l.423 1.059a.956.956 0 0 1-1.652.928l-.679-.906a1.125 1.125 0 0 0-1.906.172L4.5 15.75l-.612.153M12.75 3.031a9 9 0 0 0-8.862 12.872M12.75 3.031a9 9 0 0 1 6.69 14.036m0 0-.177-.529A2.25 2.25 0 0 0 17.128 15H16.5l-.324-.324a1.453 1.453 0 0 0-2.328.377l-.036.073a1.586 1.586 0 0 1-.982.816l-.99.282c-.55.157-.894.702-.8 1.267l.073.438c.08.474.49.821.97.821.846 0 1.598.542 1.865 1.345l.215.643m5.276-3.67a9.012 9.012 0 0 1-5.276 3.67m0 0a9 9 0 0 1-10.275-4.835M15.75 9c0 .896-.393 1.7-1.016 2.25"
+                  />
+                </svg>
+              </span>
+              <h4 class="font-bold text-[12px] text-[#131B2E] mb-1">
+                Hybrid ANC
+              </h4>
+              <p
+                class="text-[10px] text-[#464554] font-normal leading-tight tracking-tighter"
+              >
+                Block up to 40dB of ambient noise
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- You May Also Like -->
+    <section class="max-w-7xl mx-auto px-6 py-24">
+      <div class="flex justify-between items-end mb-12">
+        <div>
+          <span
+            class="text-[12px] font-bold text-[#4648D4] uppercase tracking-[2.4px] mb-3 block"
+            >The Collection</span
+          >
+          <h2
+            class="text-[30px] font-extrabold text-[#131B2E] tracking-tighter"
+          >
+            You May Also Like
+          </h2>
+        </div>
+        <a
+          href="product.html"
+          class="text-[14px] font-bold text-[#4648D4] hover:opacity-70 transition-all"
+        >
+          View All Collection
+        </a>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="group cursor-pointer">
+          <a href="product-detail.html">
+            <div
+              class="aspect-square bg-[#F3F5F9] rounded-[32px] p-6 mb-6 overflow-hidden transition-all duration-500 group-hover:shadow-2xl group-hover:shadow-indigo-100 group-hover:-translate-y-2"
+            >
+              <div class="w-full h-full overflow-hidden">
+                <img
+                  src="https://hoanghamobile.com/tin-tuc/wp-content/uploads/2024/08/background-cong-nghe-9.jpg"
+                  class="w-full h-full object-cover transition duration-700 group-hover:scale-110"
+                />
+              </div>
+            </div>
+            <div class="px-2">
+              <h3
+                class="font-extrabold text-[#131B2E] text-[18px] mb-1 group-hover:text-[#4F46E5] transition"
+              >
+                Sonic Pods Lite
+              </h3>
+              <p
+                class="text-[14px] font-normal text-[#464554] tracking-tight mb-2"
+              >
+                True Wireless Audio
+              </p>
+              <p class="text-[18px] font-bold text-[#4648D4]">$129.00</p>
+            </div>
+          </a>
+        </div>
+        <div class="group cursor-pointer">
+          <a href="product-detail.html">
+            <div
+              class="aspect-square bg-[#F3F5F9] rounded-[32px] p-6 mb-6 overflow-hidden transition-all duration-500 group-hover:shadow-2xl group-hover:shadow-indigo-100 group-hover:-translate-y-2"
+            >
+              <div class="w-full h-full overflow-hidden">
+                <img
+                  src="https://static.vecteezy.com/system/resources/thumbnails/039/662/738/small_2x/ai-generated-sound-immersion-headphones-against-a-colored-backdrop-for-music-wallpaper-photo.jpg"
+                  class="w-full h-full object-cover transition duration-700 group-hover:scale-110"
+                />
+              </div>
+            </div>
+            <div class="px-2">
+              <h3
+                class="font-extrabold text-[#131B2E] text-[18px] mb-1 group-hover:text-[#4F46E5] transition"
+              >
+                Timber Echo
+              </h3>
+              <p
+                class="text-[14px] font-normal text-[#464554] tracking-tight mb-2"
+              >
+                Smart Desktop Speaker
+              </p>
+              <p class="text-[18px] font-bold text-[#4648D4]">$229.00</p>
+            </div>
+          </a>
+        </div>
+        <div class="group cursor-pointer">
+          <a href="product-detail.html">
+            <div
+              class="aspect-square bg-[#F3F5F9] rounded-[32px] p-6 mb-6 overflow-hidden transition-all duration-500 group-hover:shadow-2xl group-hover:shadow-indigo-100 group-hover:-translate-y-2"
+            >
+              <div class="w-full h-full overflow-hidden">
+                <img
+                  src="https://img.freepik.com/premium-photo/headphones-with-blue-background-blue-background_281348-1332.jpg"
+                  class="w-full h-full object-cover transition duration-700 group-hover:scale-110"
+                />
+              </div>
+            </div>
+            <div class="px-2">
+              <h3
+                class="font-extrabold text-[#131B2E] text-[18px] mb-1 group-hover:text-[#4F46E5] transition"
+              >
+                ProCaster Mic
+              </h3>
+              <p
+                class="text-[14px] font-normal text-[#464554] tracking-tight mb-2"
+              >
+                Studio Grade Recording
+              </p>
+              <p class="text-[18px] font-bold text-[#4648D4]">$349.00</p>
+            </div>
+          </a>
+        </div>
+        <div class="group cursor-pointer">
+          <a href="product-detail.html">
+            <div
+              class="aspect-square bg-[#F3F5F9] rounded-[32px] p-6 mb-6 overflow-hidden transition-all duration-500 group-hover:shadow-2xl group-hover:shadow-indigo-100 group-hover:-translate-y-2"
+            >
+              <div class="w-full h-full overflow-hidden">
+                <img
+                  src="https://digitalmarketingdeal.com/blog/wp-content/uploads/2023/01/Top-10-Headphone-Companies-in-India.jpg"
+                  class="w-full h-full object-cover transition duration-700 group-hover:scale-110"
+                />
+              </div>
+            </div>
+            <div class="px-2">
+              <h3
+                class="font-extrabold text-[#131B2E] text-[18px] mb-1 group-hover:text-[#4F46E5] transition"
+              >
+                Vinyl Master G1
+              </h3>
+              <p
+                class="text-[14px] font-normal text-[#464554] tracking-tight mb-2"
+              >
+                Analog Precision Player
+              </p>
+              <p class="text-[18px] font-bold text-[#4648D4]">$899.00</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="bg-[#F8F9FB] pt-20 pb-10 px-8 mt-20 border-t border-gray-100"
+    >
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-20">
+          <div class="lg:col-span-4">
+            <h2 class="text-xl font-black text-[#131B2E] mb-6 tracking-tighter">
+              TECHSTORE
+            </h2>
+            <p class="text-gray-500 text-sm leading-relaxed max-w-xs">
+              Elevating your digital environment with precision-engineered
+              hardware and curated accessories.
+            </p>
+          </div>
+
+          <div class="lg:col-span-2">
+            <h3
+              class="text-xs font-bold text-[#4F46E5] uppercase tracking-widest mb-6"
+            >
+              Navigation
+            </h3>
+            <ul class="space-y-4 text-sm font-bold text-gray-500">
+              <li>
+                <a href="#" class="hover:text-[#4F46E5] transition">About</a>
+              </li>
+              <li>
+                <a href="contact.html" class="hover:text-[#4F46E5] transition">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="lg:col-span-2">
+            <h3
+              class="text-xs font-bold text-[#4F46E5] uppercase tracking-widest mb-6"
+            >
+              Legal
+            </h3>
+            <ul class="space-y-4 text-sm font-bold text-gray-500">
+              <li>
+                <a href="#" class="hover:text-[#4F46E5] transition"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#4F46E5] transition"
+                  >Terms of Service</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="lg:col-span-4">
+            <h3
+              class="text-xs font-bold text-[#4F46E5] uppercase tracking-widest mb-6"
+            >
+              Join the Collective
+            </h3>
+            <div class="flex gap-2">
+              <input
+                type="email"
+                placeholder="curator@techstore.com"
+                class="flex-1 bg-white border-none rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-[#4F46E5] transition outline-none shadow-sm"
+              />
+              <button
+                class="bg-[#4F46E5] text-white px-6 py-3 rounded-xl text-sm font-bold hover:bg-[#3F37C9] transition shadow-md shadow-indigo-100"
+              >
+                Join
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="pt-10 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center gap-6"
+        >
+          <p
+            class="text-[12px] font-bold text-gray-400 text-[#64748B] uppercase tracking-widest"
+          >
+            © 2024 TECHSTORE. Curated Precision.
+          </p>
+          <div class="flex items-center gap-6 text-gray-400">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="size-6"
+            >
+              <path
+                d="M13.5 4.06c0-1.336-1.616-2.005-2.56-1.06l-4.5 4.5H4.508c-1.141 0-2.318.664-2.66 1.905A9.76 9.76 0 0 0 1.5 12c0 .898.121 1.768.35 2.595.341 1.24 1.518 1.905 2.659 1.905h1.93l4.5 4.5c.945.945 2.561.276 2.561-1.06V4.06ZM18.584 5.106a.75.75 0 0 1 1.06 0c3.808 3.807 3.808 9.98 0 13.788a.75.75 0 0 1-1.06-1.06 8.25 8.25 0 0 0 0-11.668.75.75 0 0 1 0-1.06Z"
+              />
+              <path
+                d="M15.932 7.757a.75.75 0 0 1 1.061 0 6 6 0 0 1 0 8.486.75.75 0 0 1-1.06-1.061 4.5 4.5 0 0 0 0-6.364.75.75 0 0 1 0-1.06Z"
+              />
+            </svg>
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="size-6"
+            >
+              <path
+                d="M15.75 8.25a.75.75 0 0 1 .75.75c0 1.12-.492 2.126-1.27 2.812a.75.75 0 1 1-.992-1.124A2.243 2.243 0 0 0 15 9a.75.75 0 0 1 .75-.75Z"
+              />
+              <path
+                fill-rule="evenodd"
+                d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM4.575 15.6a8.25 8.25 0 0 0 9.348 4.425 1.966 1.966 0 0 0-1.84-1.275.983.983 0 0 1-.97-.822l-.073-.437c-.094-.565.25-1.11.8-1.267l.99-.282c.427-.123.783-.418.982-.816l.036-.073a1.453 1.453 0 0 1 2.328-.377L16.5 15h.628a2.25 2.25 0 0 1 1.983 1.186 8.25 8.25 0 0 0-6.345-12.4c.044.262.18.503.389.676l1.068.89c.442.369.535 1.01.216 1.49l-.51.766a2.25 2.25 0 0 1-1.161.886l-.143.048a1.107 1.107 0 0 0-.57 1.664c.369.555.169 1.307-.427 1.605L9 13.125l.423 1.059a.956.956 0 0 1-1.652.928l-.679-.906a1.125 1.125 0 0 0-1.906.172L4.575 15.6Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

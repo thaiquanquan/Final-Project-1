@@ -1,0 +1,912 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Products | TechStore</title>
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      .font-headline {
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-[#faf8ff] text-gray-900">
+    <nav
+      class="fixed top-0 left-0 right-0 z-50 rounded-full mt-4 mx-auto w-[95%] max-w-7xl px-6 py-3 bg-white/80 backdrop-blur-xl shadow flex justify-between items-center"
+    >
+      <a href="home.html" class="text-[24px] font-bold text-[#4F46E5]">
+        TechStore
+      </a>
+
+      <nav
+        class="hidden md:flex gap-8 text-gray-600 font-medium text-[14px] font-manrope"
+      >
+        <a href="home.html" class="hover:text-[#4F46E5] transition">Home</a>
+        <a
+          href="product.html"
+          class="text-[#4F46E5] border-b-2 border-[#4F46E5] pb-1 transition"
+          >Product</a
+        >
+        <a href="contact.html" class="hover:text-[#4F46E5] transition">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-4">
+        <button
+          class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-50 transition-transform scale-95 active:scale-90"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-5 h-5 text-gray-700"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+            />
+          </svg>
+        </button>
+        <a
+          href="cart.html"
+          class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-50 transition-transform scale-95 active:scale-90 relative"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-5 h-5 text-gray-700"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+            />
+          </svg>
+          <span
+            class="absolute top-1 right-1 bg-[#4F46E5] text-white text-[9px] w-4 h-4 flex items-center justify-center rounded-full font-bold"
+            >2</span
+          >
+        </a>
+      </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="pt-28 w-full">
+      <div class="mx-6">
+        <div
+          class="max-w-7xl mx-auto flex flex-col md:flex-row md:items-end justify-between gap-8"
+        >
+          <div class="max-w-2xl">
+            <span
+              class="text-[10px] font-bold tracking-[0.2em] text-[#825100] block mb-2"
+              >THE COLLECTION</span
+            >
+            <h1
+              class="text-4xl md:text-[48px] font-extrabold leading-tight text-[#131B2E]"
+            >
+              Modern Essentials
+            </h1>
+            <p
+              class="mt-3 text-[16px] text-[#464554] leading-[26px] font-normal max-w-lg"
+            >
+              Curated hardware for the contemporary professional. Every piece is
+              selected for performance and aesthetic purity.
+            </p>
+          </div>
+          <div
+            class="flex items-center bg-white p-2 rounded-xl shadow-sm border border-slate-200/60"
+          >
+            <div class="flex items-center px-2 gap-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4 text-gray-400"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75"
+                />
+              </svg>
+              <select
+                class="bg-transparent border-none focus:outline-none text-sm font-medium text-gray-700 cursor-pointer"
+              >
+                <option>Newest Arrivals</option>
+                <option>Price: Low to High</option>
+                <option>Price: High to Low</option>
+                <option>Top Rated</option>
+              </select>
+            </div>
+            <div class="w-[1px] h-8 bg-gray-200 mx-2"></div>
+            <div class="flex items-center gap-1">
+              <button
+                class="p-2 rounded-lg bg-gray-100 shadow-sm text-[#4F46E5] transition-colors"
+              >
+                <svg
+                  class="w-4 h-4"
+                  fill="none"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6A2.25 2.25 0 0 1 6 3.75h2.25A2.25 2.25 0 0 1 10.5 6v2.25a2.25 2.25 0 0 1-2.25 2.25H6a2.25 2.25 0 0 1-2.25-2.25V6ZM3.75 15.75A2.25 2.25 0 0 1 6 13.5h2.25a2.25 2.25 0 0 1 2.25 2.25V18a2.25 2.25 0 0 1-2.25 2.25H6A2.25 2.25 0 0 1 3.75 18v-2.25ZM13.5 6a2.25 2.25 0 0 1 2.25-2.25H18A2.25 2.25 0 0 1 20.25 6v2.25A2.25 2.25 0 0 1 18 10.5h-2.25a2.25 2.25 0 0 1-2.25-2.25V6ZM13.5 15.75a2.25 2.25 0 0 1 2.25-2.25H18a2.25 2.25 0 0 1 2.25 2.25V18A2.25 2.25 0 0 1 18 20.25h-2.25A2.25 2.25 0 0 1 13.5 18v-2.25Z"
+                  />
+                </svg>
+              </button>
+              <button
+                class="p-2 rounded-lg text-gray-500 hover:bg-gray-100 transition-colors"
+              >
+                <svg
+                  class="w-4 h-4"
+                  fill="none"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0ZM3.75 12h.007v.008H3.75V12Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm-.375 5.25h.007v.008H3.75v-.008Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="mt-12 w-full">
+      <div class="mx-6">
+        <div class="max-w-7xl mx-auto">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+            <!-- Sidebar -->
+            <aside
+              class="lg:col-span-3 lg:sticky lg:top-8 h-fit space-y-10 pt-28"
+            >
+              <div>
+                <h3 class="text-lg font-bold text-[#131B2E] mb-6">
+                  Price Range
+                </h3>
+                <div class="px-2">
+                  <div class="h-1 bg-gray-200 rounded-full relative mb-4">
+                    <div
+                      class="absolute h-full w-2/3 bg-[#4F46E5] rounded-full left-0"
+                    ></div>
+                    <div
+                      class="absolute left-0 top-1/2 -translate-y-1/2 w-4 h-4 bg-[#4F46E5] border-4 border-white rounded-full shadow-md"
+                    ></div>
+                    <div
+                      class="absolute right-1/4 top-1/2 -translate-y-1/2 w-4 h-4 bg-[#4F46E5] border-4 border-white rounded-full shadow-md"
+                    ></div>
+                  </div>
+                  <div
+                    class="flex justify-between text-xs font-bold text-[#464554]"
+                  >
+                    <span>$0</span>
+                    <span>$2,500+</span>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <h3 class="font-headline text-lg font-bold text-[#131B2E] mb-6">
+                  Categories
+                </h3>
+                <label
+                  class="flex items-center justify-between group cursor-pointer mb-3"
+                >
+                  <div class="flex items-center gap-3">
+                    <input
+                      type="checkbox"
+                      checked
+                      class="w-5 h-5 accent-[#4F46E5] rounded border-gray-300 transition"
+                    />
+                    <span
+                      class="text-[14px] font-normal text-gray-600 group-hover:text-[#4F46E5] transition-colors"
+                      >Laptops</span
+                    >
+                  </div>
+                  <span class="text-[12px] font-normal text-gray-400">12</span>
+                </label>
+                <label
+                  class="flex items-center justify-between group cursor-pointer mb-3"
+                >
+                  <div class="flex items-center gap-3">
+                    <input
+                      type="checkbox"
+                      class="w-5 h-5 accent-[#4F46E5] rounded border-gray-300 transition"
+                    />
+                    <span
+                      class="text-[14px] font-normal text-gray-600 group-hover:text-[#4F46E5] transition-colors"
+                      >Keyboards</span
+                    >
+                  </div>
+                  <span class="text-[12px] font-normal text-gray-400">24</span>
+                </label>
+                <label
+                  class="flex items-center justify-between group cursor-pointer mb-3"
+                >
+                  <div class="flex items-center gap-3">
+                    <input
+                      type="checkbox"
+                      class="w-5 h-5 accent-[#4F46E5] rounded border-gray-300 transition"
+                    />
+                    <span
+                      class="text-[14px] font-normal text-gray-600 group-hover:text-[#4F46E5] transition-colors"
+                      >Mice</span
+                    >
+                  </div>
+                  <span class="text-[12px] font-normal text-gray-400">18</span>
+                </label>
+              </div>
+              <div>
+                <h3 class="font-headline text-lg font-bold text-[#131B2E] mb-6">
+                  Brands
+                </h3>
+                <div class="flex flex-wrap gap-2">
+                  <span
+                    class="px-4 py-2 bg-[#EEF2FF] text-[#4F46E5] rounded-full text-xs font-bold cursor-pointer border border-[#4F46E5]/20"
+                    >Apple</span
+                  >
+                  <span
+                    class="px-4 py-2 bg-gray-100 text-gray-600 rounded-full text-xs font-bold hover:bg-gray-200 transition cursor-pointer"
+                  >
+                    Logitech
+                  </span>
+                  <span
+                    class="px-4 py-2 bg-gray-100 text-gray-600 rounded-full text-xs font-bold hover:bg-gray-200 transition cursor-pointer"
+                  >
+                    Razer
+                  </span>
+                  <span
+                    class="px-4 py-2 bg-gray-100 text-gray-600 rounded-full text-xs font-bold hover:bg-gray-200 transition cursor-pointer"
+                  >
+                    Dell
+                  </span>
+                  <span
+                    class="px-4 py-2 bg-gray-100 text-gray-600 rounded-full text-xs font-bold hover:bg-gray-200 transition cursor-pointer"
+                  >
+                    Asus
+                  </span>
+                </div>
+              </div>
+            </aside>
+
+            <!-- Product Grid -->
+            <div class="lg:col-span-9">
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
+                <!-- Product 1 -->
+                <a
+                  href="product-detail.html"
+                  class="group block cursor-pointer mb-12"
+                >
+                  <div
+                    class="aspect-[4/5] bg-[#F8F9FB] rounded-3xl overflow-hidden relative mb-4"
+                  >
+                    <img
+                      src="https://tse2.mm.bing.net/th/id/OIP.Mit7MAhbPicwWmILplgXWwHaEK?w=768&h=432&rs=1&pid=ImgDetMain&o=7&rm=3"
+                      class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                    />
+                    <div
+                      class="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300"
+                    >
+                      <button
+                        class="w-full py-3 bg-[#4F46E5] text-white rounded-lg font-bold text-sm shadow-xl flex items-center justify-center gap-2"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="2.5"
+                          stroke="currentColor"
+                          class="w-4 h-4"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                          />
+                        </svg>
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-start">
+                    <div>
+                      <h4 class="text-[16px] font-bold text-[#131B2E]">
+                        Macbook Pro M3
+                      </h4>
+                      <p class="text-[12px] text-[#464554] mt-1 font-normal">
+                        Lightweight • 16GB • Pro
+                      </p>
+                    </div>
+                    <span class="text-[16px] font-extrabold text-[#4648D4]"
+                      >$1,599</span
+                    >
+                  </div>
+                </a>
+
+                <!-- Product 2 -->
+                <a
+                  href="product-detail.html"
+                  class="group block cursor-pointer mb-12"
+                >
+                  <div
+                    class="aspect-[4/5] bg-[#F8F9FB] rounded-3xl overflow-hidden relative mb-4"
+                  >
+                    <img
+                      src="https://haylou.info/images/haylou-solar-lite-09-p-800.jpg"
+                      class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                    />
+                    <div
+                      class="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300"
+                    >
+                      <button
+                        class="w-full py-3 bg-[#4F46E5] text-white rounded-lg font-bold text-sm shadow-xl flex items-center justify-center gap-2"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="2.5"
+                          stroke="currentColor"
+                          class="w-4 h-4"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                          />
+                        </svg>
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-start">
+                    <div>
+                      <h4 class="text-[16px] font-bold text-[#131B2E]">
+                        KeyChron Q1 Pro
+                      </h4>
+                      <p class="text-[12px] text-[#464554] mt-1 font-normal">
+                        Mechanical • Wireless • Aluminum
+                      </p>
+                    </div>
+                    <span class="text-[16px] font-extrabold text-[#4648D4]"
+                      >$199</span
+                    >
+                  </div>
+                </a>
+
+                <!-- Product 3 -->
+                <a
+                  href="product-detail.html"
+                  class="group block cursor-pointer mb-12"
+                >
+                  <div
+                    class="aspect-[4/5] bg-[#F8F9FB] rounded-3xl overflow-hidden relative mb-4"
+                  >
+                    <img
+                      src="https://tse4.mm.bing.net/th/id/OIP.XXZFc0sZDOX-K33RDqS0lwHaE7?w=626&h=417&rs=1&pid=ImgDetMain&o=7&rm=3"
+                      class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                    />
+                    <div
+                      class="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300"
+                    >
+                      <button
+                        class="w-full py-3 bg-[#4F46E5] text-white rounded-lg font-bold text-sm shadow-xl flex items-center justify-center gap-2"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="2.5"
+                          stroke="currentColor"
+                          class="w-4 h-4"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                          />
+                        </svg>
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-start">
+                    <div>
+                      <h4 class="text-[16px] font-bold text-[#131B2E]">
+                        Logitech MX Master 3S
+                      </h4>
+                      <p class="text-[12px] text-[#464554] mt-1 font-normal">
+                        Ergonomic • Silent Clicks • Darkfield
+                      </p>
+                    </div>
+                    <span class="text-[16px] font-extrabold text-[#4648D4]"
+                      >$99</span
+                    >
+                  </div>
+                </a>
+
+                <!-- Product 4 -->
+                <a
+                  href="product-detail.html"
+                  class="group block cursor-pointer mb-12"
+                >
+                  <div
+                    class="aspect-[4/5] bg-[#F8F9FB] rounded-3xl overflow-hidden relative mb-4"
+                  >
+                    <img
+                      src="https://external-preview.redd.it/9rEAgZ1NFvLftXFYy990XeAjinIoiWa608-uIX-CqOg.jpg?width=1080&crop=smart&auto=webp&s=4d3ec88838b4dc94ebe66058712cb6873cfbcf03"
+                      class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                    />
+                    <div
+                      class="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300"
+                    >
+                      <button
+                        class="w-full py-3 bg-[#4F46E5] text-white rounded-lg font-bold text-sm shadow-xl flex items-center justify-center gap-2"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="2.5"
+                          stroke="currentColor"
+                          class="w-4 h-4"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                          />
+                        </svg>
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-start">
+                    <div>
+                      <h4 class="text-[16px] font-bold text-[#131B2E]">
+                        Dell XPS 15
+                      </h4>
+                      <p class="text-[12px] text-[#464554] mt-1 font-normal">
+                        OLED Display • i9 • RTX 4060
+                      </p>
+                    </div>
+                    <span class="text-[16px] font-extrabold text-[#4648D4]"
+                      >$2,599</span
+                    >
+                  </div>
+                </a>
+
+                <!-- Product 5 -->
+                <a
+                  href="product-detail.html"
+                  class="group block cursor-pointer mb-12"
+                >
+                  <div
+                    class="aspect-[4/5] bg-[#F8F9FB] rounded-3xl overflow-hidden relative mb-4"
+                  >
+                    <img
+                      src="https://tse2.mm.bing.net/th/id/OIP.NkEXbNgmWozHcTG2cG50lgHaEK?rs=1&pid=ImgDetMain&o=7&rm=3"
+                      class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                    />
+                    <div
+                      class="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300"
+                    >
+                      <button
+                        class="w-full py-3 bg-[#4F46E5] text-white rounded-lg font-bold text-sm shadow-xl flex items-center justify-center gap-2"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="2.5"
+                          stroke="currentColor"
+                          class="w-4 h-4"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                          />
+                        </svg>
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-start">
+                    <div>
+                      <h4 class="text-[16px] font-bold text-[#131B2E]">
+                        NuPhy Air75
+                      </h4>
+                      <p class="text-[12px] text-[#464554] mt-1 font-normal">
+                        Low Profile • Hot-Swap • RGB
+                      </p>
+                    </div>
+                    <span class="text-[16px] font-extrabold text-[#4648D4]"
+                      >$129</span
+                    >
+                  </div>
+                </a>
+
+                <!-- Product 6 -->
+                <a
+                  href="product-detail.html"
+                  class="group block cursor-pointer mb-12"
+                >
+                  <div
+                    class="aspect-[4/5] bg-[#F8F9FB] rounded-3xl overflow-hidden relative mb-4"
+                  >
+                    <img
+                      src="https://media.flixcar.com/webp/synd-asset/Samsung-117684175-za-feature-galaxy-s23-s918-535228355--FB_TYPE_A_MO_JPG-.jpg"
+                      class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                    />
+                    <div
+                      class="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300"
+                    >
+                      <button
+                        class="w-full py-3 bg-[#4F46E5] text-white rounded-lg font-bold text-sm shadow-xl flex items-center justify-center gap-2"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="2.5"
+                          stroke="currentColor"
+                          class="w-4 h-4"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                          />
+                        </svg>
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-start">
+                    <div>
+                      <h4 class="text-[16px] font-bold text-[#131B2E]">
+                        Razer Blade 16
+                      </h4>
+                      <p class="text-[12px] text-[#464554] mt-1 font-normal">
+                        Dual Mode Mini-LED • 4080
+                      </p>
+                    </div>
+                    <span class="text-[16px] font-extrabold text-[#4648D4]"
+                      >$2,899</span
+                    >
+                  </div>
+                </a>
+
+                <!-- Product 7 -->
+                <a
+                  href="product-detail.html"
+                  class="group block cursor-pointer mb-12"
+                >
+                  <div
+                    class="aspect-[4/5] bg-[#F8F9FB] rounded-3xl overflow-hidden relative mb-4"
+                  >
+                    <img
+                      src="https://tse4.mm.bing.net/th/id/OIP.KYDL4EUm-EMwn6WqucHXigHaHa?w=800&h=800&rs=1&pid=ImgDetMain&o=7&rm=3"
+                      class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                    />
+                    <div
+                      class="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300"
+                    >
+                      <button
+                        class="w-full py-3 bg-[#4F46E5] text-white rounded-lg font-bold text-sm shadow-xl flex items-center justify-center gap-2"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="2.5"
+                          stroke="currentColor"
+                          class="w-4 h-4"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                          />
+                        </svg>
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-start">
+                    <div>
+                      <h4 class="text-[16px] font-bold text-[#131B2E]">
+                        SteelSeries Apex Pro
+                      </h4>
+                      <p class="text-[12px] text-[#464554] mt-1 font-normal">
+                        Adjustable Actuation • OLED Screen
+                      </p>
+                    </div>
+                    <span class="text-[16px] font-extrabold text-[#4648D4]"
+                      >$249</span
+                    >
+                  </div>
+                </a>
+
+                <!-- Product 8 -->
+                <a
+                  href="product-detail.html"
+                  class="group block cursor-pointer mb-12"
+                >
+                  <div
+                    class="aspect-[4/5] bg-[#F8F9FB] rounded-3xl overflow-hidden relative mb-4"
+                  >
+                    <img
+                      src="https://media.s-bol.com/42lP9nOAOEB2/Al2l0O/550x678.jpg"
+                      class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                    />
+                    <div
+                      class="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300"
+                    >
+                      <button
+                        class="w-full py-3 bg-[#4F46E5] text-white rounded-lg font-bold text-sm shadow-xl flex items-center justify-center gap-2"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="2.5"
+                          stroke="currentColor"
+                          class="w-4 h-4"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                          />
+                        </svg>
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-start">
+                    <div>
+                      <h4 class="text-[16px] font-bold text-[#131B2E]">
+                        Razer DeathAdder V3
+                      </h4>
+                      <p class="text-[12px] text-[#464554] mt-1 font-normal">
+                        Lightweight • 30K Optical • Pro
+                      </p>
+                    </div>
+                    <span class="text-[16px] font-extrabold text-[#4648D4]"
+                      >$149</span
+                    >
+                  </div>
+                </a>
+              </div>
+
+              <!-- Pagination -->
+              <div class="mt-20 flex items-center justify-center gap-2">
+                <button
+                  class="w-10 h-10 flex items-center justify-center rounded-xl text-gray-500 hover:bg-gray-100 hover:text-gray-700 transition-colors cursor-pointer"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-5 h-5"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15.75 19.5 8.25 12l7.5-7.5"
+                    />
+                  </svg>
+                </button>
+
+                <button
+                  class="w-10 h-10 flex items-center justify-center rounded-xl bg-[#4F46E5] text-white font-bold shadow-md cursor-pointer"
+                >
+                  1
+                </button>
+
+                <button
+                  class="w-10 h-10 flex items-center justify-center rounded-xl text-[#464554] font-bold hover:bg-gray-100 hover:text-[#4F46E5] transition-colors cursor-pointer"
+                >
+                  2
+                </button>
+
+                <button
+                  class="w-10 h-10 flex items-center justify-center rounded-xl text-[#464554] font-bold hover:bg-gray-100 hover:text-[#4F46E5] transition-colors cursor-pointer"
+                >
+                  3
+                </button>
+
+                <span class="text-gray-300 mx-1">...</span>
+
+                <button
+                  class="w-10 h-10 flex items-center justify-center rounded-xl text-[#464554] font-bold hover:bg-gray-100 hover:text-[#4F46E5] transition-colors cursor-pointer"
+                >
+                  12
+                </button>
+
+                <button
+                  class="w-10 h-10 flex items-center justify-center rounded-xl text-gray-500 hover:bg-gray-100 hover:text-gray-700 transition-colors cursor-pointer"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-5 h-5"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="bg-[#F8F9FB] pt-20 pb-10 px-8 mt-20 border-t border-gray-100"
+    >
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-20">
+          <div class="lg:col-span-4">
+            <h2 class="text-xl font-black text-[#131B2E] mb-6 tracking-tighter">
+              TECHSTORE
+            </h2>
+            <p class="text-gray-500 text-sm leading-relaxed max-w-xs">
+              Elevating your digital environment with precision-engineered
+              hardware and curated accessories.
+            </p>
+          </div>
+
+          <div class="lg:col-span-2">
+            <h3
+              class="text-xs font-bold text-[#4F46E5] uppercase tracking-widest mb-6"
+            >
+              Navigation
+            </h3>
+            <ul class="space-y-4 text-sm font-bold text-gray-500">
+              <li>
+                <a href="#" class="hover:text-[#4F46E5] transition">About</a>
+              </li>
+              <li>
+                <a href="contact.html" class="hover:text-[#4F46E5] transition">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="lg:col-span-2">
+            <h3
+              class="text-xs font-bold text-[#4F46E5] uppercase tracking-widest mb-6"
+            >
+              Legal
+            </h3>
+            <ul class="space-y-4 text-sm font-bold text-gray-500">
+              <li>
+                <a href="#" class="hover:text-[#4F46E5] transition"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#4F46E5] transition"
+                  >Terms of Service</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="lg:col-span-4">
+            <h3
+              class="text-xs font-bold text-[#4F46E5] uppercase tracking-widest mb-6"
+            >
+              Join the Collective
+            </h3>
+            <div class="flex gap-2">
+              <input
+                type="email"
+                placeholder="curator@techstore.com"
+                class="flex-1 bg-white border-none rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-[#4F46E5] transition outline-none shadow-sm"
+              />
+              <button
+                class="bg-[#4F46E5] text-white px-6 py-3 rounded-xl text-sm font-bold hover:bg-[#3F37C9] transition shadow-md shadow-indigo-100"
+              >
+                Join
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="pt-10 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center gap-6"
+        >
+          <p
+            class="text-[12px] font-bold text-gray-400 text-[#64748B] uppercase tracking-widest"
+          >
+            © 2024 TECHSTORE. Curated Precision.
+          </p>
+          <div class="flex items-center gap-6 text-gray-400">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="size-6"
+            >
+              <path
+                d="M13.5 4.06c0-1.336-1.616-2.005-2.56-1.06l-4.5 4.5H4.508c-1.141 0-2.318.664-2.66 1.905A9.76 9.76 0 0 0 1.5 12c0 .898.121 1.768.35 2.595.341 1.24 1.518 1.905 2.659 1.905h1.93l4.5 4.5c.945.945 2.561.276 2.561-1.06V4.06ZM18.584 5.106a.75.75 0 0 1 1.06 0c3.808 3.807 3.808 9.98 0 13.788a.75.75 0 0 1-1.06-1.06 8.25 8.25 0 0 0 0-11.668.75.75 0 0 1 0-1.06Z"
+              />
+              <path
+                d="M15.932 7.757a.75.75 0 0 1 1.061 0 6 6 0 0 1 0 8.486.75.75 0 0 1-1.06-1.061 4.5 4.5 0 0 0 0-6.364.75.75 0 0 1 0-1.06Z"
+              />
+            </svg>
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="size-6"
+            >
+              <path
+                d="M15.75 8.25a.75.75 0 0 1 .75.75c0 1.12-.492 2.126-1.27 2.812a.75.75 0 1 1-.992-1.124A2.243 2.243 0 0 0 15 9a.75.75 0 0 1 .75-.75Z"
+              />
+              <path
+                fill-rule="evenodd"
+                d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM4.575 15.6a8.25 8.25 0 0 0 9.348 4.425 1.966 1.966 0 0 0-1.84-1.275.983.983 0 0 1-.97-.822l-.073-.437c-.094-.565.25-1.11.8-1.267l.99-.282c.427-.123.783-.418.982-.816l.036-.073a1.453 1.453 0 0 1 2.328-.377L16.5 15h.628a2.25 2.25 0 0 1 1.983 1.186 8.25 8.25 0 0 0-6.345-12.4c.044.262.18.503.389.676l1.068.89c.442.369.535 1.01.216 1.49l-.51.766a2.25 2.25 0 0 1-1.161.886l-.143.048a1.107 1.107 0 0 0-.57 1.664c.369.555.169 1.307-.427 1.605L9 13.125l.423 1.059a.956.956 0 0 1-1.652.928l-.679-.906a1.125 1.125 0 0 0-1.906.172L4.575 15.6Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
